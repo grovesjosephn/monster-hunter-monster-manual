@@ -1,0 +1,31 @@
+{
+  "name": "mhw-monster-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^24.8.0",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "parcel-plugin-imagemin": "^3.0.0",
+    "source-map-explorer": "^2.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "evergreen-ui": "^4.17.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --out-dir build --target browser",
+    "explore:build": "source-map-explorer ./build/**.js ./build/**.js.map"
+  }
+}
